@@ -1,0 +1,711 @@
+
+/* GLOBAL STYLES */
+
+/* Layout*/
+
+/* BASE CODE EDITIED BY NADIR BAKRIDI FOR P1E SUBMISSION */
+
+
+body {
+    width: 100%;
+}
+
+.margin-default {
+    margin: 0 80px;
+}
+
+.flex-row-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+    background-color: #F1EFEC;
+}
+
+.flex-2 {
+    flex: 2;
+    background-color:  #F1EFEC;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 1fr 2fr;
+    column-gap: 104px;
+}
+
+
+
+/* Paddings */
+
+.padding-default {
+    padding: 104px 0 144px 0;
+}
+
+.padding-80 {
+    padding: 80px 0;
+}
+
+.padding-40 {
+    padding: 40px 0;
+}
+
+.padding-bottom {
+    padding-bottom: 144px;
+}
+
+.padding-sides {
+    padding: 0 80px;
+}
+
+
+/* Backgrounds */
+
+.sect-dark {
+    background-color: #242424;
+    padding: 80px;
+}
+
+.sect-dark p {
+    color: white;
+}
+
+
+/* Text Styles */
+
+h1 {
+    color: black;
+    font-family: "EB Garamond";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 0px 16px 0px;
+}
+
+h2 {
+    font-family: "EB Garamond";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    color: black;
+    margin: 0px 0px 24px 0px;
+}
+
+.h2-reverse {
+    color: white;
+    font-family: "EB Garamond";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 0px 16px 0px;
+}
+
+.h3-reverse {
+    color: white;
+    font-family: "EB Garamond";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 0px 16px 0px;
+}
+
+p {
+    margin: 0px 0px 16px 0px;
+    color: black;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.p-bold {
+    color: black;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.p-lg {
+    color: black;
+    font-family: "EB Garamond";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 0px 24px 0px;
+}
+
+a {
+    color: black;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.all-caps {
+    font-family: "Work Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.graphic-text {
+    color: rgba(0, 0, 0, 0.10);
+    font-family: "EB Garamond";
+    font-size: 142px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: right;
+}
+
+
+/* Buttons */
+
+.btn-dark {
+    background-color: black;
+    padding: 16px;
+    height: 50px;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    outline: none;
+    border-style: none;
+}
+
+.btn-dark:hover {
+    outline: 2px solid black;
+    background-color: white;
+    color: black;
+    border-style: none;
+}
+
+.btn-line {
+    padding: 12px 0px;
+    border-style: none;
+    border-bottom: 2px solid #000;
+    background-color:  #F1EFEC;
+}
+
+.btn-line-reverse {
+    color: white !important;
+    background-color: #242424;
+    padding: 12px 0px;
+    border-style: none;
+    border-bottom: 2px solid white;
+
+}
+
+.btn-grey {
+    padding: 12px;
+    border-style: none;
+    background-color: #F1EFEC;
+    width: 100%;          
+    text-align: left;    
+}
+.btn-grey a {
+    color: inherit;       
+    text-decoration: none; 
+    display: block;        
+}
+
+.reverse {
+    color: white !important;
+}
+
+
+/* FORM */
+
+.form-label {
+    display: block;
+    margin: 0px 0px 16px 0px;
+    color: black;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-field {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-style: none;
+    margin-bottom: 16px;
+}
+
+.form-button {
+    display: block;
+    padding: 12px 12px;
+    border-style: none;
+    background-color: white;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+/* HEADER */
+
+#yama-logo {
+    width: 152px;
+}
+
+#top-nav ul {
+    padding: 0;
+}
+
+#top-nav li {
+    list-style-type: none;
+    margin-right: 24px;
+    border-bottom: 2px solid white;
+    padding-bottom: 4px;
+    display: inline;
+}
+
+#top-nav li:hover {
+    border-bottom: 2px solid black;
+    padding-bottom: 4px;
+}
+
+
+
+/* HERO */
+
+.img-hero {
+    background-image: url(../images/yama-hero-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 80px;
+}
+
+.img-100 {
+    width: 100%;
+}
+
+.subhead {
+    width: 20%;
+    padding: 12px 0px 12px 24px;
+    border-left: 2px solid black;
+}
+
+#explore-img {
+    background-image: url(../images/yama-sliders.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative; 
+}
+
+.explore h2 {
+    color: white;
+    margin: auto;
+}
+
+.explore p {
+    color: white;
+    margin: auto;
+}
+
+.explore button {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.0);
+    border-color: white;
+    margin: auto;
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 180px auto 180px auto;
+    z-index: 2;
+}
+
+.gradient {
+    background: radial-gradient(50% 50% at 50% 50%, #242424 0%, rgba(36, 36, 36, 0.00));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+/* FOOTER edited to use grid*/
+
+.footer-1 {
+
+}
+
+.footer-1-wrap {
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+
+}
+
+.footer-left {
+    grid-column: 1 / span 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-right {
+    grid-column: 7 / span 6;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    max-height: 182px;
+    flex-wrap: wrap;
+}
+
+#footer-nav ul {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 2 columns */
+    grid-template-rows: repeat(1, auto);   /* 3 rows */
+    gap: 16px; 
+}
+
+
+#footer-nav li {
+    list-style: none;
+    font-family: "EB Garamond";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.copyright {
+    color: rgba(0, 0, 0, 0.5);
+    white-space: nowrap;  /* Text didnt wanna stay on one line*/
+    /* https://stackoverflow.com/questions/6667081/keep-a-line-of-text-as-a-single-line-wrap-the-whole-line-or-none-at-all */
+}
+
+.copyright a {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.heading-underline {
+    display: inline-block;
+    width: 100%;
+    border-bottom: solid 2px white;
+    margin-bottom: 16px;
+}
+
+.social-icons {
+    width: 20px;
+    margin-right: 5px;
+}
+
+
+/* Additions */
+.footerColumns {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footerColumn {
+    flex: 1; 
+    margin: 0 48px; 
+}
+
+
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+.hiddenDesktop {
+    display: none;
+    
+}
+
+.hiddenDesktop2 {
+    display: none;
+    
+}
+
+.mobileHero {
+    display: none; 
+    flex-direction: column;
+    align-items: center;   
+    text-align: center;
+}
+
+
+/* -----MEDIA QUERIES----- */ 
+
+/* SMARTPHONE */
+
+@media screen and (max-width: 480px) {
+
+    h2 {
+        font-family: "EB Garamond";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 10px; /* 100% */
+        color: black;
+        margin: 0px 0px 24px 0px;
+    }
+
+    .mobileHero {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;  
+    }
+
+    .boxPad {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    
+
+    .mobileLeft {
+        display: flex; 
+        flex-direction: column; 
+        align-items: left;
+        text-align: left;  
+    }
+
+    .flexLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
+    }
+
+    .stars{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .starImg {
+        position: relative; /* Enable fine-tuning of position */
+        top: -8px; /* Move the image slightly higher */
+    }
+
+    .paddingR {
+        padding-right: 8px;
+    }
+    
+
+    .hiddenMobile {
+        display: none;
+
+    }
+
+    .hiddenDesktop{
+        display: flex;
+        
+    }
+
+    .hiddenDesktop2 {
+        display: flex; 
+        flex-direction: column; 
+        align-items: left;
+        text-align: left;  
+    }
+    .hiddenDesktop3 {
+        display: flex; 
+        flex-direction: column; 
+        align-items: left;
+        text-align: left;  
+    }
+
+    .h2-reverse {
+        color: white;
+        font-family: "EB Garamond";
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0px 0px 16px 0px;
+        text-align: center;
+    }
+
+    h1 {
+    color: black;
+    font-family: "EB Garamond";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 0px 16px 0px;
+    }
+
+    
+
+
+    .padding-40 {
+        padding: 24 0px;
+        
+    }
+
+    .paddingB{
+        padding-bottom:  48px;
+        
+    }
+
+    .paddingL{
+        padding-bottom:  48px;
+        
+    }
+
+    .paddingT{
+        padding-bottom:  32px;
+        padding-top: 16px;
+        
+    }
+
+    .padTB {
+        padding-top: 24px;
+        padding-bottom: 48px;
+    }
+
+    .padding10 {
+        padding: 10 0px;
+    }
+    .padding12 {
+        padding: 12 0px;
+    }
+
+    .padding-80 {
+        padding: 24 0px;
+        
+    }
+
+    .margin-default {
+        margin: 0 24px;
+    }
+
+    .grid-2 {
+        display: grid;
+        grid-template: auto / 1fr;
+        column-gap: 104px;
+    }
+
+    .isHidden {
+        display: none;
+    }
+
+    .footer-1-wrap {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .footer-nav {
+        display: inline;       
+    }
+
+    .all-caps {
+        font-family: "Work Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: black;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: left;
+        
+    }
+
+    .graphic-text {
+        color: rgba(0, 0, 0, 0.10);
+        font-family: "EB Garamond";
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: right;
+    }
+
+    .footer-right {
+        grid-column: 7 / span 1;
+    }
+
+    .sect-dark {
+        background-color: #242424;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    
+
+   
+
+}
+
+/* TABLET */
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .hiddenMobile {
+        display: none;
+
+    }
+    .hiddenDesktop {
+        display: flex;
+        
+    }
+    
+}
