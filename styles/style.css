@@ -24,6 +24,12 @@ body {
     justify-content: space-between;
 }
 
+.flexCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .flex-row-center {
     display: flex;
     flex-direction: row;
@@ -181,6 +187,19 @@ ul a {
     margin-bottom: 0px;
 }
 
+
+.all-caps2 {
+    font-family: "Work Sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 .here {
     font-family: "Work Sans";
     font-size: 15px;
@@ -282,10 +301,11 @@ ul a {
     margin: 0px 0px 16px 0px;
     color: black;
     font-family: "Work Sans";
-    font-size: 16px;
+    font-size: 30px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
+    border-bottom: solid 2px white;
 }
 
 .form-field {
@@ -298,14 +318,16 @@ ul a {
 
 .form-button {
     display: block;
-    padding: 12px 12px;
     border-style: none;
-    background-color: white;
+    background-color: #FF9500;
+    color: #ffffff;
     font-family: "Work Sans", sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    height: 50px;
+    width: 100% ;
 }
 
 
@@ -348,6 +370,23 @@ ul a {
     width: 100%;
 }
 
+.imgFirstLeft {
+    width: 700px; /* may need changing*/ 
+    height: 500px;
+    
+}
+
+.imgNextRight {
+    width: 600px;
+    height: 250px;
+
+}
+
+.imgThree {
+    width: 400px;
+    height: 500px;
+}
+
 .subhead {
     width: 20%;
     padding: 12px 0px 12px 24px;
@@ -360,6 +399,7 @@ ul a {
     background-repeat: no-repeat;
     display: flex;
     position: relative; 
+    height: 570px;
 }
 
 .explore h2 {
@@ -376,6 +416,89 @@ ul a {
     border-color: rgba(0, 0, 0, 0);
 }
 
+.h1Blue {
+    color: #04387C;
+    font-family: Roboto;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.h1White {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    z-index: 2;
+
+}
+
+.imgSub {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    position: relative;
+    top: 20px;
+    z-index: 2;
+
+}
+
+.imgSub2 {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: left;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    position: relative;
+    top: 40px;
+    z-index: 2;
+    padding-left: 40px;
+
+}
+
+.imgSub3 {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: left;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 20;
+    line-height: 40px;
+    position: relative;
+    top: 20px;
+    z-index: 2;
+    padding-left: 40px;
+
+}
+
+.h3White {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .explore {
     display: flex;
     flex-direction: column;
@@ -390,12 +513,65 @@ ul a {
 
     background: linear-gradient(270deg, rgba(0, 0, 0, 0.00) 3.36%, rgba(0, 0, 0, 0.80) 100%);
     width: 1031px;
-    height: 659px;
+    height: 571px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
     
+}
+
+.bottomGrad {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    width: 400px; 
+    height: 150px; 
+    position: absolute;
+    bottom: 4px; /* increased a bit extended past bottom otherwise*/
+    left: 0;
+    z-index: 1;
+}
+
+.bottomGrad2 {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    width: 700px; 
+    height: 150px; 
+    position: absolute;
+    bottom: 0px; /* increased a bit extended past bottom otherwise*/
+    left: 0;
+    z-index: 1;
+}
+
+.bottomGrad2 {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    width: 600px; 
+    height: 150px; 
+    position: absolute;
+    bottom: 0px; /* increased a bit extended past bottom otherwise*/
+    left: 0;
+    z-index: 1;
+}
+
+.imgContainer {
+    position: relative;
+    justify-content: space-between;
+    width: 100%; 
+}
+
+
+.imgContainer2 {
+    width: 700px; /* may need changing*/ 
+    height: 500px;
+    position: relative;
+    justify-content: space-between;
+    width: 100%; 
+}
+
+.imgContainer3 {
+    width: 600px; /* may need changing*/ 
+    height: 250px;
+    position: relative;
+    justify-content: space-between;
+    width: 100%; 
 }
 
 
@@ -465,7 +641,8 @@ ul a {
 }
 
 .social-icons {
-    width: 20px;
+    width: 70px;
+    height: 60px;
     margin-right: 5px;
 }
 
@@ -694,6 +871,8 @@ ul a {
         text-align: left;
         
     }
+
+    
 
     .graphic-text {
         color: rgba(0, 0, 0, 0.10);
