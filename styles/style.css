@@ -53,6 +53,13 @@ body {
     column-gap: 104px;
 }
 
+.shopGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(2, 1fr);    /* 2 equal rows */
+    gap: 10px;
+}
+
 
 
 /* Paddings */
@@ -108,7 +115,7 @@ h2 {
     font-style: normal;
     font-weight: 400;
     line-height: 40px; /* 100% */
-    color: black;
+    color: rgb(255, 255, 255);
     margin: 0px 0px 24px 0px;
 }
 
@@ -221,6 +228,27 @@ ul a {
     line-height: normal;
     text-align: right;
 }
+
+.blueText {
+    color:#04387C;
+    font-size: 36px;
+}
+
+/* Hours of operation list*/
+.schedule {
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 20px; /* Adds space to the left of the list */
+}
+
+.schedule li {
+    font-size: 26px;
+    line-height: 1.6; 
+}
+
+.schedule strong {
+    font-weight: bold; /* Makes the day of the week bold */
+}
+
 
 
 /* Buttons */
@@ -387,6 +415,9 @@ ul a {
     height: 500px;
 }
 
+
+
+
 .subhead {
     width: 20%;
     padding: 12px 0px 12px 24px;
@@ -435,6 +466,15 @@ ul a {
     position: relative;
     z-index: 2;
 
+}
+
+.h2O {
+    color: #FF9500;
+    font-family: Roboto;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .imgSub {
@@ -490,6 +530,42 @@ ul a {
 
 }
 
+.shopSub {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: left;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 20;
+    line-height: 40px;
+    position: relative;
+    top: 0px;
+    z-index: 2;
+    padding-left: 20px;
+
+}
+
+.shopH2 {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: left;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 10;
+    line-height: 40px;
+    position: relative;
+    top: -25px;
+    z-index: 2;
+    padding-left: 23px;
+
+}
+
 .h3White {
     color: #FFF;
     font-family: Roboto;
@@ -499,6 +575,10 @@ ul a {
     line-height: normal;
 }
 
+.whiteText {
+    color: #FFF;
+}
+
 .explore {
     display: flex;
     flex-direction: column;
@@ -506,6 +586,16 @@ ul a {
     justify-content: flex-start; /* Optional: Ensures proper vertical alignment */
     gap: 16px;
     margin: 180px 80px; /* Remove auto centering */
+    z-index: 2;
+}
+
+.exploreF {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 180px auto 180px auto;
     z-index: 2;
 }
 
@@ -521,6 +611,17 @@ ul a {
     
 }
 
+
+.shopGrad {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    width: 425px; 
+    height: 70px; 
+    position: absolute;
+    bottom: 0px; /* increased a bit extended past bottom otherwise*/
+    left: 0;
+    z-index: 1;
+}
+
 .bottomGrad {
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     width: 400px; 
@@ -533,7 +634,7 @@ ul a {
 
 .bottomGrad2 {
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    width: 700px; 
+    width: 750px; 
     height: 150px; 
     position: absolute;
     bottom: 0px; /* increased a bit extended past bottom otherwise*/
@@ -541,7 +642,7 @@ ul a {
     z-index: 1;
 }
 
-.bottomGrad2 {
+.bottomGrad3 {
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     width: 600px; 
     height: 150px; 
@@ -574,6 +675,30 @@ ul a {
     width: 100%; 
 }
 
+.imgShop {
+    width: 700px; /* may need changing*/ 
+    height: 200px;
+    position: relative; 
+    justify-content: space-between;
+    width: 100%; 
+}
+
+/* [^] Both above and below need to be edited simulatenously if changing stuff [v]*/
+
+.shopImg {
+    width: 425px; /* may need changing*/ 
+    height: 200px;
+}
+
+
+.aboutBody {
+    background-color: #04387C;
+}
+
+.aboutText {
+    color: #FFF;
+
+}
 
 /* FOOTER edited to use grid*/
 
@@ -688,6 +813,24 @@ ul a {
     text-align: center;
 }
 
+#explore-imgFooter {
+    background-image: url(../images/yama-sliders.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative; 
+    color: #ffffff;
+}
+
+.gradientFooter {
+    background: radial-gradient(50% 50% at 50% 50%, #242424 0%, rgba(36, 36, 36, 0.00));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
 /* -----MEDIA QUERIES----- */ 
 
@@ -781,6 +924,17 @@ ul a {
         line-height: normal;
         margin: 0px 0px 16px 0px;
         text-align: left;
+    }
+
+    .h2-reverseF {
+        color: #fff;
+        font-family: "EB Garamond";
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0px 0px 16px 0px;
+        text-align: center;
     }
 
     h1 {
