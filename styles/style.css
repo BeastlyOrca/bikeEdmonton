@@ -358,6 +358,20 @@ ul a {
     width: 100% ;
 }
 
+.sButton {
+    display: block;
+    border-style: none;
+    background-color: #FF9500;
+    color: #ffffff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 50px;
+    width: 250px;
+}
+
 
 /* HEADER */
 
