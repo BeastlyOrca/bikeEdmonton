@@ -60,6 +60,15 @@ body {
     gap: 10px;
 }
 
+.sBody {
+    color: #000;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
 
 
 /* Paddings */
@@ -646,6 +655,16 @@ ul a {
     z-index: 1;
 }
 
+.qGrad {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    width: 400px; 
+    height: 150px; 
+    position: absolute;
+    bottom: 27px; /* increased a bit extended past bottom otherwise*/
+    left: 0;
+    z-index: 1;
+}
+
 .bottomGrad2 {
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     width: 750px; 
@@ -807,7 +826,16 @@ ul a {
 }
 
 
-
+.workText {
+    color: #000;
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    bottom: 20px;
+    position: relative;
+}
 
 
 .hiddenDesktop {
@@ -828,7 +856,7 @@ ul a {
 }
 
 #explore-imgFooter {
-    background-image: url(../images/yama-sliders.png);
+    background-image: url(../images/app.svg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
